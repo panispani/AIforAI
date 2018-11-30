@@ -18,3 +18,6 @@ def sub(I1, I2):
 def mul_constant(I1, n):
     (from1, to1) = I1
     return (min(from1 * n, to1 * n), max(from1 * n, to1 * n))
+
+def to_interval(num):
+    return (num, num)

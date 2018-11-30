@@ -43,5 +43,12 @@ class TestInterval(unittest.TestCase):
         self.assertEqual((0, 0), mul_constant((1, 2), 0))
         print("PASSED")
 
+    def test_to_interval(self):
+        print("\nTest conversion of number to Interval")
+        self.assertEqual((2, 2), to_interval(2))
+        self.assertEqual((-1, -1), to_interval(-1))
+        self.assertEqual((0, 0), to_interval(0))
+        print("PASSED")
+
 if __name__ == '__main__':
     unittest.main()
