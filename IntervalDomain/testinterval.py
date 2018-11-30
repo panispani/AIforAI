@@ -36,5 +36,12 @@ class TestInterval(unittest.TestCase):
         self.assertEqual((-2, 7), sub((1, 2), (-5, 3)))
         print("PASSED")
 
+    def test_mul_constant(self):
+        print("\nTest Interval multiplication by constant")
+        self.assertEqual((2, 4), mul_constant((1, 2), 2))
+        self.assertEqual((-4, -2), mul_constant((1, 2), -2))
+        self.assertEqual((0, 0), mul_constant((1, 2), 0))
+        print("PASSED")
+
 if __name__ == '__main__':
     unittest.main()
