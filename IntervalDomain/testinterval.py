@@ -19,5 +19,11 @@ class TestInterval(unittest.TestCase):
         self.assertEqual(3, relu_number(3))
         print("PASSED")
 
+    def test_addition(self):
+        print("\nTest Interval addition")
+        self.assertEqual((2, 4), addition((0, 1), (2, 3)))
+        self.assertEqual((1, 4), addition((-1, 1), (2, 3)))
+        print("PASSED")
+
 if __name__ == '__main__':
     unittest.main()

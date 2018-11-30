@@ -4,3 +4,8 @@ def relu(I1):
 
 def relu_number(n):
     return max(0, n)
+
+def addition(I1, I2):
+    (from1, to1) = I1
+    (from2, to2) = I2
+    return (from1 + from2,  to1 + to2)
